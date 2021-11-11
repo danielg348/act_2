@@ -1,0 +1,40 @@
+using System;
+
+namespace actividad_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string valor;
+            int edad = 0;
+            double altura = 0.0;
+
+
+            Console.WriteLine("¡Bienevenido al parque jaime duque!, por favor ingresa tu edad:");
+            valor = Console.ReadLine();
+            edad = Convert.ToInt32(valor);
+
+            if(edad >= 18)
+            {
+                Console.WriteLine("Lamentablemente su edad no es permitida en el parque jaime duque.");
+            }
+            else
+            { 
+                Console.WriteLine("Perfecto, pase a ser medido para obtener su altura");
+                valor = Console.ReadLine();
+                altura = Convert.ToDouble(valor);
+
+                if(altura < 1.50)
+                {
+                 Console.WriteLine("¡ahora podra divertirse con las actividades que ofrece el parque!");
+                }
+                {
+                    Console.WriteLine("¡excelente, tiene disponiblidad de todos los sitios !"); 
+                } 
+                    Console.WriteLine("¡disfrute al maximo!");
+
+      }
+    }
+  }  
+} 
